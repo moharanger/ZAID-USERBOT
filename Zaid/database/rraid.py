@@ -4,7 +4,7 @@ collection = cli["Zaid"]["rraid"]
 
 
 async def rraid_user(chat):
-    doc = {"_id": "Rraid", "users": [chat]}
+    doc = {"_id": "raid", "users": [chat]}
     r = await collection.find_one({"_id": "Rraid"})
     if r:
         await collection.update_one({"_id": "Rraid"}, {"$push": {"users": chat}})

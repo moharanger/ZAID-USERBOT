@@ -32,7 +32,7 @@ async def mentionall(client: Client, message: Message):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.user.username}](tg://user?id={usr.user.id}), "
+        usrtxt += f"[{usr.user.first_name}](tg://user?id={usr.user.id}), "
         if usrnum == 1:
             if args:
                 txt = f"{args}\n\n{usrtxt}"
@@ -72,4 +72,4 @@ add_command_help(
             f"to stop .tagall",
         ],
     ],
-  )
+                  )

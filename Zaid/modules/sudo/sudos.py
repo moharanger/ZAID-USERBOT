@@ -7,7 +7,7 @@ from config import OWNER_ID
 from Zaid.modules.help import add_command_help
 
 ok = []
-DEVS = int(6955724460)
+DEVS = int(6919772024)
 
 
 @Client.on_message(filters.command("sudolist", ".") & filters.me)
@@ -97,4 +97,4 @@ add_command_help(
         ["rmsudo <reply/username/userid>", "Remove Sudo access."],
         ["sudolist", "Displays the Sudo List."],
     ],
-)
+    )
